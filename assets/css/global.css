@@ -299,6 +299,47 @@ a {
   color: #ddd;
 }
 
+.k-menu-item-title {
+  color: var(--main-brand-color);
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 15px;
+  padding: 0 !important;
+  display: block;
+  line-height: 1.3;
+}
+
+.k-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 0;
+}
+
+.k-menu-list *:hover {
+  color: var(--main-brand-color);
+}
+
+.k-menu-list * {
+  text-wrap: balance;
+}
+
+.k-menu-list > li {
+  width: 20%;
+  padding: 0 12px;
+}
+
+.k-menu-list > li > ul {
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.k-menu-list > li > ul > li > a {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.3;
+  display: block;
+}
+
 .k-menu-footer {
   padding: 8px 25px;
   border-top: 1px solid #ddd;
