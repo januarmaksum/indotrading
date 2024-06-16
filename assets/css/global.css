@@ -1,6 +1,7 @@
 :root {
   --main-brand-color-darker: #bf2b2b;
   --main-brand-color: #d53030;
+  --main-brand-text-color: #484848;
   --main-brand-color-90: rgba(213, 48, 48, 0.9);
   --main-brand-color-80: rgba(213, 48, 48, 0.8);
   --main-brand-color-70: rgba(213, 48, 48, 0.7);
@@ -11,3 +12,211 @@
   --main-brand-color-20: rgba(213, 48, 48, 0.2);
   --main-brand-color-10: rgba(213, 48, 48, 0.1);
 }
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  color: var(--main-brand-text-color);
+  background: #fff;
+}
+
+a {
+  color: #018bc9;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.k-btn-red {
+  background-color: var(--main-brand-color);
+  border: 1px solid var(--main-brand-color);
+  color: white;
+}
+
+.k-btn-red:hover {
+  background: var(--main-brand-color-darker);
+  color: white;
+}
+
+.container {
+  width: 97% !important;
+  max-width: 1500px !important;
+}
+
+.k-text-balance {
+  text-wrap: balance;
+}
+
+.k-text-pretty {
+  text-wrap: pretty;
+}
+
+.k-top-header {
+  padding: 5px;
+}
+
+.k-second-header {
+  padding: 5px;
+}
+
+.k-header-logo {
+  width: 135px;
+  height: 40px;
+}
+
+.k-bg-logo {
+  background-image: url(https://resources.indotrading.com/frontend/images/logo-lg.png?v=6);
+  background-size: cover;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.home-icon-menu {
+  font-size: 20px;
+}
+
+.k-btn-search-header {
+  width: 64px;
+}
+
+.k-btn-dropdown-filter-search {
+  width: auto;
+  text-align: left;
+  border-color: var(--main-brand-color);
+  border-width: 2px;
+  border-left-width: 1px;
+  border-left-color: var(--main-brand-color);
+  color: black;
+}
+
+.k-btn-dropdown-filter-search:hover {
+  background-color: transparent;
+  color: var(--main-brand-text-color);
+  border-color: var(--main-brand-color);
+  border-left-color: var(--main-brand-color);
+}
+
+.k-btn-dropdown-filter-search.show {
+  background-color: transparent!important;
+  border-color: var(--main-brand-color)!important;
+  box-shadow: none!important;
+  color: var(--main-brand-text-color)!important;
+  border-left-width: 1px;
+  border-left-color: var(--main-brand-color);
+}
+
+.k-btn-dropdown-filter-search:focus {
+  box-shadow: none!important;
+}
+
+.k-btn-dropdown-filter-search::after {
+  content: "";
+  display: none;
+}
+
+.k-btn-dropdown-filter-search .icon-down-open {
+  color: var(--main-brand-color);
+}
+
+.k-dropdown-brand {
+  border-color: var(--main-brand-color);
+}
+
+.k-btn-icon-header .home-icon-menu {
+  font-size: 21px;
+  color: grey;
+}
+
+.k-btn-icon-header-container {
+  gap: 10px;
+  border-right: none;
+  padding-right: 0;
+}
+
+.k-btn-login {
+  padding: 9px 1rem;
+}
+
+.k-btn-icon-header {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.k-basket-container .k-counter-basket {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  background-color: #00f;
+  border-radius: 7px;
+  padding: 2px 5px;
+  color: #fff;
+  font-size: 10px;
+}
+
+.k-form-search .form-control {
+  border: 2px solid var(--main-brand-color);
+  border-right-color: #ccc;
+  border-right-width: 0;
+}
+
+@media (max-width: 767px) {
+  .d-hide {
+    display: none!important;
+  }
+}
+
+@media (min-width: 768px) {
+  .k-header-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .k-bg-logo {
+    height: 80px;
+    background-size: contain;
+  }
+
+  .k-btn-icon-header .home-icon-menu {
+    font-size: 31px;
+  }
+
+  .k-form-search>.btn, .input-group-lg>.form-control, .input-group-lg>.form-select, .input-group-lg>.input-group-text {
+    padding: .5rem 1rem;
+  }
+
+  .k-btn-dropdown-filter-search {
+    width: 160px;
+  }
+
+  .k-text-uppercase-md {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+  .k-btn-icon-header-container {
+    padding-right: 20px;
+    border-right: 1px solid grey;
+  }
+}
+
+@media (min-width: 1400px) {
+  
+}
+
+/*$grid-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);*/
